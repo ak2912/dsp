@@ -33,7 +33,7 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 >> I would describe 'lambda' as sort of a shortcut way to define a function.  For example, given a list of tuples ('tups'), defining a function to sort by the second value of each tuple would be-
 
 >> def sortkey(tup):
-  >> return tup[1]
+>>>> return tup[1]
 >> sorted(tups, key=sortkey)
 
 >> Using lambda, this could be done in one line, saving lines of code and memory-
