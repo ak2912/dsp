@@ -34,9 +34,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> def sortkey(tup):
 
->> return tup[1]
+>>>> return tup[1]
 
->> sorted(tups, key=sortkey)
+>>>> sorted(tups, key=sortkey)
 
 >> Using lambda, this could be done in one line, saving lines of code and memory-
 
