@@ -22,7 +22,7 @@ How are Python lists and sets similar and different? Give examples of using both
 
 >> Python sets differ from lists in two ways - 1) sets do not care about order, and 2) you cannot have duplicates in a set.  For example, if I were collecting all the names of classmates in a list, I may see some common names (i.e. John, or David) appear repeatedly.  In a set of such names, however, each name would only appear once.
 
-Because sets omit duplicates, by definition they are the same size or shorter than lists, which makes finding an element in a set easier than in a list.
+>> Because sets omit duplicates, by definition they are the same size or shorter than lists, which makes finding an element in a set easier than in a list.
 
 ---
 
@@ -32,13 +32,13 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 >> I would describe 'lambda' as sort of a shortcut way to define a function.  For example, given a list of tuples ('tups'), defining a function to sort by the second value of each tuple would be-
 
-def sortkey(tup):
-  return tup[1]
-sorted(tups, key=sortkey)
+>> def sortkey(tup):
+  >> return tup[1]
+>> sorted(tups, key=sortkey)
 
-Using lambda, this could be done in one line, saving lines of code and memory-
+>> Using lambda, this could be done in one line, saving lines of code and memory-
 
-sorted(tups, key=lambda tup: tup[1])
+>> sorted(tups, key=lambda tup: tup[1])
 
 ---
 
