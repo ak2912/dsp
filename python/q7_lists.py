@@ -84,8 +84,24 @@ def remove_adjacent(nums):
     >>> remove_adjacent([])
     []
     """
-    raise NotImplementedError
+    if nums==[]:
+        return nums
+    successful = False
+    while not successful:
+        if nums[0]==nums[1]:
+            del nums[0]
+        else:
+            successful = True
+    #print nums
 
+    nums_copy = nums[:]
+    x=len(nums)
+    for y in range(0,x-1):
+        if nums_copy[y]==nums_copy[y+1]:
+            del nums[y]
+    return nums
+
+##This is super inelegant.  I started with the code in the bottom half but I kept getting an "out of range" error when trying "remove_adjacent([2, 2, 3, 3, 3])".  So I added the first half to compensate.
 
 def linear_merge(list1, list2):
     """
