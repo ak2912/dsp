@@ -18,7 +18,9 @@ def donuts(count):
     >>> donuts(99)
     'Number of donuts: many'
     """
-    raise NotImplementedError
+    if count>9:
+        count='many'
+    print 'Number of donuts: ' + str(count)
 
 
 def both_ends(s):
@@ -37,7 +39,12 @@ def both_ends(s):
     >>> both_ends('xyz')
     'xyyz'
     """
-    raise NotImplementedError
+    first_two=s[:2]
+    last_two=s[-2:]
+    if len(s)<2:
+        print ""
+    else:
+        print str(first_two) + str(last_two)
 
 
 def fix_start(s):
@@ -56,7 +63,10 @@ def fix_start(s):
     >>> fix_start('donut')
     'donut'
     """
-    raise NotImplementedError
+    first_letter = s[:1]
+    ans = s.translate(string.maketrans(first_letter, '*'))
+    omit_first_letter = ans[1:]
+    print str(first_letter) + str(omit_first_letter) 
 
 
 def mix_up(a, b):
@@ -74,7 +84,11 @@ def mix_up(a, b):
     >>> mix_up('pezzy', 'firm')
     'fizzy perm'
     """
-    raise NotImplementedError
+    b_to_a = b[:2]
+    remaining_a = a[2:]
+    a_to_b = a[:2]
+    remaining_b = b[2:]
+    print str(b_to_a)+str(remaining_a) + " " + str(a_to_b)+str(remaining_b)
 
 
 def verbing(s):
@@ -91,7 +105,13 @@ def verbing(s):
     >>> verbing('do')
     'do'
     """
-    raise NotImplementedError
+    if len(s)>2:
+        if s[-3:] == 'ing':
+            print str(s)+ str('ly')
+        else:
+            print str(s) + str('ing')
+    else:
+        print str(s)
 
 
 def not_bad(s):
@@ -130,4 +150,9 @@ def front_back(a, b):
     >>> front_back('Kitten', 'Donut')
     'KitDontenut'
     """
-    raise NotImplementedError
+    a_front = a[:(len(a)+1)/2]
+    a_back = a[(len(a)+1)/2:]
+    b_front = b[:(len(b)+1)/2]
+    b_back = b[(len(b)+1)/2:]
+    print str(a_front) + str(b_front) + str(a_back) + str(b_back)
+
