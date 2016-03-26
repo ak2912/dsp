@@ -6,7 +6,7 @@
 
 # The below skeleton is optional.  You can use it or you can write the script with an approach of your choice.
 
-
+"""""
 import csv
 
   def read_data(data):
@@ -17,3 +17,33 @@ import csv
 
   def get_team(self, index_value, parsed_data):
     # COMPLETE THIS FUNCTION
+    
+""""""
+#My code
+
+import pandas as pd
+
+url = "https://raw.githubusercontent.com/ak2912/dsp/master/python/football.csv"
+df = pd.read_csv(url)
+
+df['Goals Difference'] = df['Goals'].sub(df['Goals Allowed'])
+df['Raw Goals Difference'] = df['Goals Difference'].abs()
+
+df['Raw Goals Difference'].argmin()
+
+df.loc[7, 'Team']
+df.loc[7, 'Goals Difference']
+
+
+def Q8(url):
+    df = pd.read_csv(url)
+    df['Goals Difference'] = df['Goals'].sub(df['Goals Allowed'])
+    print "Team Name: " + df.loc[7, 'Team']
+    print "Goal Differential: " + str(df.loc[7, 'Goals Difference'])
+
+#Run the Q8 function with the correct URL for the correct answer.  Output is-
+
+"""""
+Team Name: Aston_Villa
+Goal Differential: -1
+"""""
