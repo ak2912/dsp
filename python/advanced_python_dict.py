@@ -43,5 +43,4 @@ q7 = take(3, professor_dict.iteritems())
 new_professor_dict = df.set_index(['last name','first name']).T.to_dict('list')
 
 q8 = take(3, new_professor_dict.iteritems())
-
 ##Question 8
