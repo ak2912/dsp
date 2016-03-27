@@ -48,7 +48,9 @@ Describe Python's `lambda`. What is it, and what is it used for? Give at least o
 
 Explain list comprehensions. Give examples and show equivalents with `map` and `filter`. How do their capabilities compare? Also demonstrate set comprehensions and dictionary comprehensions.
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> List comprehensions are used to apply functions to an existing list.  As an example, you could have a simple list [1,2,3] and apply a squared function to create a new list with [x**2 for x in [1,2,3]].  Using map with a lambda function, the code would be map(lambda x:x**2, [1,2,3]) - with a similar outcome (maybe a little slower). And flter would be more appropriate if you wanted to filter down your list before running a function on it.
+
+>> And just as list comprehensions are used to apply a function to an existing list, set and dictionary comprehensions can be used to apply a function to an existing set or dictionary.
 
 ---
 
