@@ -131,7 +131,9 @@ def not_bad(s):
     >>> not_bad("It's bad yet not")
     "It's bad yet not"
     """
-    raise NotImplementedError
+    test = re.sub(r'(\bnot\b)(.*)(\bbad\b)', 'good', s)
+    print str(test)
+#What is the non regex approach?
 
 
 def front_back(a, b):
