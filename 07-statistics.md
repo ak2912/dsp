@@ -77,7 +77,9 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ###Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> As I understand it, when you use frequentist statistics, you use hard-and-fast rules/assumptions.  In Bayesian statistics, your assumptions change as more data is collected.  For example, lets say you were collecting data on coin flips.  A frequentist would be dismissive about data which suggests that a coin may be biased (i.e. 70 heads out of 100 coin flips), because to a frequentist a coin is always weighted 50% heads/tails.  A bayesian, however, may start with a 50% initial assumption (or not, depending on the prior he/she wants to use), but if the data comes back highly skewed in favor of heads or tails the bayseian would weigh the possibility that the coin is biased.
+
+>> I think frequentist statistics is appealing because of the "clean" nature of it, but bayesian statistics probably more reflects the reality of the world we are in.
 
 ---
 
