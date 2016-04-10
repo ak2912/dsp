@@ -28,8 +28,8 @@ Using the code referenced in the book, follow the step-by-step instructions belo
 (Mac):      /Users/yourname/ds/metis/prework  
 (Windows):  C:/ds/metis/prework
 ```
-
 **Step 2. cd into the prework directory.  Use GitHub to pull this repo to your computer.**
+
 
 ```
 $ git clone https://github.com/AllenDowney/ThinkStats2.git
@@ -78,7 +78,7 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 
 >> P(B | A) = Probability that you have a twin brother from an identical twin = 1/300 * 1/2
 
->> 5/11
+>> 5/11 
 
 ---
 
